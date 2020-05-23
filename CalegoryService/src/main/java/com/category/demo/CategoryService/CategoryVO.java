@@ -1,4 +1,4 @@
-package com.category.demo.CalegoryService;
+package com.category.demo.CategoryService;
 
 public class CategoryVO {
 

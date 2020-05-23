@@ -1,13 +1,13 @@
-package com.category.demo.CalegoryService;
+package com.category.demo.CategoryService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CalegoryServiceApplication {
+public class CategoryServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CalegoryServiceApplication.class, args);
+		SpringApplication.run(CategoryServiceApplication.class, args);
 	}
 
 }
