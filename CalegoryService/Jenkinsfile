@@ -1,8 +1,5 @@
 pipeline{
-	agent any
-	jdk = tool name: 'JDK1_8_0_251'
-	env.JAVA_HOME = "${jdk}"
-	echo "jdk installation path is: ${jdk}"
+	agent any	
 	stages{
 		stage('Compile Stage'){
 			steps{
