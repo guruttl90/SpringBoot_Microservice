@@ -13,7 +13,10 @@ pipeline{
 		stage('build Stage'){
 			steps{
 				withMaven(maven: 'maven_3_6_3'){
-				bat 'mvn install'
+					dir("${env.WORKSPACE}/CalegoryService"){
+						bat 'mvn install'	
+					}
+				
 				}
 			}							
 		}	
