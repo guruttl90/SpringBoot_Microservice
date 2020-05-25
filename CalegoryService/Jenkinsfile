@@ -19,6 +19,16 @@ pipeline{
 				
 				}
 			}							
+		}
+		stage('deploy Stage'){
+			steps{
+				withMaven(maven: 'maven_3_6_3'){
+					dir("${env.WORKSPACE}/CalegoryService"){
+						bat 'mvn deploy'	
+					}
+				
+				}
+			}							
 		}	
 	}
 }
