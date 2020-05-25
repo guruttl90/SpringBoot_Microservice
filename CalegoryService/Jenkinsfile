@@ -4,7 +4,9 @@ pipeline{
 		stage('Compile Stage'){
 			steps{
 				withMaven(maven: 'maven_3_6_3'){
-				bat 'mvn compile'
+					dir("${env.WORKSPACE}/CalegoryService"){
+						bat 'mvn compile'
+					}						
 				}
 			}							
 		}	
